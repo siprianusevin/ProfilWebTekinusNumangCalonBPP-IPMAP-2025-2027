@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
 
 :root {
-    /* Palette: Premium Dark & Gold */
+   
     --bg-body: #0a0a0a;
     /* Hitam Pekat */
     --bg-card: #141414;
@@ -10,7 +10,7 @@
     --primary: #ffffff;
     --secondary: #a0a0a0;
 
-    /* Gradient Emas untuk Aksen Papua */
+    
     --gold-grad: linear-gradient(135deg, #D4AF37 0%, #F2C94C 100%);
     --gold-text: linear-gradient(to right, #D4AF37, #F2C94C);
 
@@ -19,7 +19,7 @@
     --shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 
     --ease: cubic-bezier(0.23, 1, 0.32, 1);
-    /* Smooth slow-motion easing */
+    
 }
 
 /* --- 2. GLOBAL RESET --- */
@@ -35,7 +35,6 @@ html {
 
 body {
     font-family: 'Outfit', sans-serif;
-    /* Font modern sans-serif */
     background-color: var(--bg-body);
     color: var(--primary);
     line-height: 1.8;
@@ -47,7 +46,6 @@ h2,
 h3,
 h4 {
     font-family: 'Playfair Display', serif;
-    /* Font elegan untuk judul */
     font-weight: 600;
     letter-spacing: -0.5px;
 }
@@ -78,7 +76,6 @@ ul {
     padding: 120px 0;
 }
 
-/* Judul Section dengan Gradasi */
 .section-title {
     font-size: 3rem;
     text-align: center;
@@ -88,7 +85,6 @@ ul {
     -webkit-text-fill-color: transparent;
     position: relative;
     display: table;
-    /* Supaya centering works well with gradients */
     margin-left: auto;
     margin-right: auto;
 }
@@ -148,7 +144,6 @@ ul {
     color: #fff;
 }
 
-/* Garis bawah animasi saat hover */
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -188,7 +183,6 @@ ul {
 
 /* --- UPDATE HERO SECTION LAYOUT --- */
 
-/* Wrapper agar Teks dan Foto sejajar */
 .hero-wrapper {
     display: flex;
     align-items: center;
@@ -204,10 +198,8 @@ ul {
 /* Styling Kolom Teks */
 .hero-text {
     flex: 1;
-    /* Mengambil sisa ruang */
     max-width: 600px;
     text-align: left;
-    /* Teks rata kiri agar rapi */
     padding-right: 30px;
     z-index: 2;
 }
@@ -236,10 +228,8 @@ ul {
     line-height: 1.8;
 }
 
-/* Styling Kolom Gambar */
 .hero-image {
     flex: 0.8;
-    /* Ukuran proporsional gambar */
     display: flex;
     justify-content: flex-end;
     /* Rata kanan */
@@ -247,7 +237,6 @@ ul {
     z-index: 2;
 }
 
-/* Bingkai Foto Mewah */
 .image-frame {
     width: 380px;
     height: 480px;
@@ -262,7 +251,6 @@ ul {
     transition: transform 0.5s ease;
 }
 
-/* Animasi Floating (Melayang halus) */
 .image-frame {
     animation: floatImage 6s ease-in-out infinite;
 }
@@ -283,10 +271,8 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Agar foto mengisi bingkai tanpa gepeng */
 }
 
-/* Dekorasi di belakang foto (Opsional - agar lebih artistik) */
 .image-frame::before {
     content: '';
     position: absolute;
@@ -323,7 +309,6 @@ ul {
 
     .image-frame {
         width: 280px;
-        /* Perkecil foto di HP */
         height: 350px;
     }
 }
@@ -347,8 +332,6 @@ ul {
     box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
 }
 
-/* --- CSS UNTUK PROFIL BARU --- */
-
 .profile-wrapper {
     display: flex;
     gap: 50px;
@@ -359,7 +342,6 @@ ul {
 /* Styling Kolom Foto */
 .profile-photo-col {
     flex: 0 0 350px;
-    /* Lebar tetap untuk foto */
 }
 
 .profile-img-box {
@@ -374,7 +356,6 @@ ul {
     position: relative;
 }
 
-/* Dekorasi garis emas di sudut foto */
 .profile-img-box::after {
     content: '';
     position: absolute;
@@ -393,7 +374,6 @@ ul {
 
 .profile-img-box:hover img {
     transform: scale(1.05);
-    /* Zoom dikit saat hover */
 }
 
 /* Styling Kolom Info (Kanan) */
@@ -452,7 +432,6 @@ ul {
 .identity-table .label {
     width: 160px;
     color: #D4AF37;
-    /* Label warna emas */
     font-weight: 500;
 }
 
@@ -496,7 +475,6 @@ ul {
         border-radius: 10px;
         border-left: none;
         border-top: 4px solid #D4AF37;
-        /* Pindah border ke atas */
     }
 
     .identity-table .label {
@@ -505,7 +483,7 @@ ul {
     }
 }
 
-/* --- 6. VISI MISI (MODERN GRID) --- */
+/* --- 6. VISI MISI (GRID) --- */
 #visi-misi {
     background: var(--bg-card);
     position: relative;
@@ -545,7 +523,6 @@ ul {
 }
 
 .vm-image {
-    /* Filter grayscale agar artistik, hover jadi berwarna */
     filter: grayscale(100%);
     transition: filter 0.5s ease;
 }
